@@ -15,3 +15,23 @@ var database = firebase.database();
 // database.ref().set({
 //     clickCount: "clickCounter"
 // });
+
+
+
+    var freelancerURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+
+    $.ajax({
+      url: freelancerURL,
+      method: "GET"
+    }).then(function(response) {
+    
+    });
+
+    var mapsURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+
+    $.ajax({
+      url: mapsURL,
+      method: "GET"
+    }).then(function(response) {
+    
+    });
