@@ -39,16 +39,15 @@
         </div>
         
     </div>
-
-    
-    
+    </div>
+    <div class="search">
         <div class="form">
             <form action="action_page.php">
 
                 <div class="form-group">
                     <label>Who do you want to hire?</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
+                        <option>Choose one...</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
@@ -56,19 +55,39 @@
                     </select>
                 </div>
 
-                <div class="form-group">
-                    <label>Where are you located?</label>
-                    <input type="text" id="location" placeholder="enter zip code, city, or address...">
+                <label>Where are you located?</label>
+                <div class="form-row">
+                    <div class="col-7">
+                        <input type="text" class="form-control" placeholder="City">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="State">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Zip">
+                    </div>
                 </div>
 
-                <div class="form-group"></div>
-                    <label>What's Your Budget?</label>
+                <label>What's Your Budget?</label>
+                <div class="form-group">
                     <div class="row">
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Minimum">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Minimum...</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" placeholder="Maximum">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Maximum...</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -76,9 +95,31 @@
                 <input type="submit" value="Submit">
 
             </form>
+            <div class="results"><h1>Here's who we found: </h1>
+                <table class="table">
+                    <thead>
+                        <!-- The api call should add the data to these columns below as well as append each result with the next -->
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+            <br>
             <div id="map"></div>
         </div>
-    
+    </div>
+    <div class="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae, esse adipisci molestias facere
+            illo accusantium similique consequatur temporibus necessitatibus harum praesentium debitis totam impedit
+            dicta minus vel quos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed nulla cum
+            quaerat unde, soluta sunt cupiditate reiciendis placeat quibusdam sit autem quod quos in. Eveniet,
+            consequuntur corporis. Pariatur, sunt?</p>
+    </div>
 
 
     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
