@@ -15,7 +15,7 @@ var database = firebase.database();
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 40.768, lng: 111.891},
-    zoom: 4
+    center: {lat: 40.768, lng: -111.891},
+    zoom: 13
   });
 }
