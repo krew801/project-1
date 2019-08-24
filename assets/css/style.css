@@ -17,7 +17,7 @@ body{
 .search, .about{
     margin: auto;
     width: 85%;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(2, 255, 234);
     padding: 10px;
     opacity: .8;
     background-color: aliceblue;
