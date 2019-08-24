@@ -16,9 +16,12 @@ body{
   }
 .search, .about{
     margin: auto;
-    width: 75%;
-    border: 3px solid black;
+    width: 85%;
+    border: 3px solid rgb(0, 0, 0);
     padding: 10px;
+    opacity: .8;
+    background-color: aliceblue;
+    border-radius: 5px;
 }
 .about{
     margin-top:10px;
@@ -27,5 +30,5 @@ body{
     margin-bottom: 2000px;
 }
 .results{
-    color:white;
+    color:rgb(4, 73, 151);
 }
