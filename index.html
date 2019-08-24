@@ -55,7 +55,7 @@
                 <label>Where are you located?</label>
                 <div class="form-row">
                     <div class="col-7">
-                        <input type="text" class="form-control" placeholder="City">
+                        <input id=type="text" class="form-control" placeholder="City">
                     </div>
                     <div class="col">
                         <input type="text" class="form-control" placeholder="State">
@@ -92,12 +92,10 @@
                 <input id="add-search" type="submit" value="Submit">
 
             </form>
-            <<<<<<< HEAD <div class="results">
+            <div id="searchDiv" class="results">
                 <h1>Here's who we found: </h1>
-                =======
                 <div class="results">
                     <h1>Here's what we found: </h1>
-                    >>>>>>> master
                     <table class="table">
                         <thead>
                             <!-- The api call should add the data to these columns below as well as append each result with the next -->
@@ -112,20 +110,20 @@
                 </div>
                 <br>
                 <div id="map"></div>
+            </div>
         </div>
-    </div>
-    <div class="about">
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae, esse adipisci molestias facere illo accusantium similique consequatur temporibus necessitatibus harum praesentium debitis totam impedit dicta minus vel quos corrupti.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed nulla cum quaerat unde, soluta sunt cupiditate reiciendis placeat quibusdam sit autem quod quos in. Eveniet, consequuntur corporis. Pariatur, sunt?</p>
-    </div>
+        <div class="about">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae, esse adipisci molestias facere illo accusantium similique consequatur temporibus necessitatibus harum praesentium debitis totam impedit dicta minus vel quos corrupti.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed nulla cum quaerat unde, soluta sunt cupiditate reiciendis placeat quibusdam sit autem quod quos in. Eveniet, consequuntur corporis. Pariatur, sunt?</p>
+        </div>
 
 
-    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3nTUjOnD55KzcSGNfNRXQXG2JzL6ZNXw&callback=initMap" async defer></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3nTUjOnD55KzcSGNfNRXQXG2JzL6ZNXw&callback=initMap" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>
