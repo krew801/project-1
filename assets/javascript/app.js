@@ -54,7 +54,6 @@ map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 40.768, lng: -111.891 },
     zoom: 13
 });
-}
 
 function renderSearch(searchList) {
     $("#searchDiv").empty();
