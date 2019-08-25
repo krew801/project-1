@@ -5,131 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Find a job!</title>
 </head>
 
-<body>
-
-
-
-    <div class="jumbotron jumbotron-fluid" style="background-color:lightblue">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">BE CARBON AWARE!</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <!-- This should be anchored so that when clicked it takes you to our "About" section that talks about what our app does.-->
-                            <a class="nav-link" href="#">About This App <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <h1 class="display-4">Jobs Near Me</h1>
-            <p class="lead">Are looking for some work? Type what you are looking for below and see
-                what jobs are available near you! Also see what the weather is in that area!</p>
-        </div>
-        
-    </div>
-    </div>
-    <div class="search">
-        <div class="form">
-            <form action="action_page.php">
-
-                <div class="form-group">
-                    <label>Who do you want to hire?</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Choose one...</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-
-                <label>Where are you located?</label>
-                <div class="form-row">
-                    <div class="col-7">
-                        <input type="text" class="form-control" placeholder="City">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="State">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Zip">
-                    </div>
-                </div>
-
-                <label>What's Your Budget?</label>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Minimum...</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Maximum...</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <input type="submit" value="Submit">
-
-            </form>
-            <div class="results"><h1>Here's what we found: </h1>
-                <table class="table">
-                    <thead>
-                        <!-- The api call should add the data to these columns below as well as append each result with the next -->
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                        </tr>
-                        </tbody>
-                </table>
+<body id="front-page">
+    <div class="searchBar">
+        <h1>Type a program language below and see who is hiring!
+            <div class="form-box">
+                <input type="text" class="search-job" placeholder="Program Language...">
+                <input type="text" class="search-location" placeholder="Location...">
+                <button class="search-btn" type="button">Search</button>
             </div>
-            <br>
-            <div id="map"></div>
-        </div>
-    </div>
-    <div class="about">
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, vitae, esse adipisci molestias facere
-            illo accusantium similique consequatur temporibus necessitatibus harum praesentium debitis totam impedit
-            dicta minus vel quos corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed nulla cum
-            quaerat unde, soluta sunt cupiditate reiciendis placeat quibusdam sit autem quod quos in. Eveniet,
-            consequuntur corporis. Pariatur, sunt?</p>
+        </h1>
     </div>
     <div id = 'jobs'></div>
 
-
-    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3nTUjOnD55KzcSGNfNRXQXG2JzL6ZNXw&callback=initMap"
-        async defer></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>
