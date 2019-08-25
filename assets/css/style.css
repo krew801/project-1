@@ -15,9 +15,10 @@ body{
     min-height: 100%;
   }
 .search, .about{
+    text-align:left;
     margin: auto;
     width: 85%;
-    border: 3px solid rgb(2, 255, 234);
+    /* border: 3px solid rgb(2, 255, 234); */
     padding: 10px;
     opacity: .8;
     background-color: aliceblue;
@@ -38,7 +39,7 @@ body{
     width: 85%;
     padding: 10px;
     opacity: .90;
-    background-color: rgb(84, 164, 235);
+    background-color: rgb(144, 150, 155);
     border-radius: 5px;
 }
 h1{
@@ -50,7 +51,7 @@ h1{
     font-family: 'Slabo 27px', serif;
 }
 #front-page{
-    background-image: url('../images/trauma-inspired-programming.gif');
+    background-image: url('../images/60332-full_abstract-4k-light-vector-background-footage-with-white-and-black.gif');
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
