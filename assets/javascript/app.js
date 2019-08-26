@@ -13,7 +13,6 @@ var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + 
   //For each job in the response, create a new div dynamically to display the data
     for (let i = 0; i < r.length; i++) {
   // Creates div to store basic company search result information as a bootstrap card
-      // var newCard = $('<div>').addClass('card');
       // Created second div to store information within the card body
       var cardBody = $('<div>').addClass('card-body');
       var cardBodyRow = $('<div>').addClass('row body-cont');
@@ -45,7 +44,7 @@ var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + 
       //Add image and card body to the card to complete the card
       cardBody.append(cardBodyRow);
        //Add each job cart to a div (descrpition not added yet)
-      $('.card').append(cardBody);
+       $('.card').append(cardBody);
       
       
 
