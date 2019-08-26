@@ -1,19 +1,15 @@
 body{
-    /* background-image: url('../images/background-image.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed; */
     margin-top: 10px;
 }
 
 
 
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-  }
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+min-height: 100%;
+}
 
 h1{
     text-align: center;
@@ -24,8 +20,19 @@ h1{
     font-family: 'Slabo 27px', serif;
 }
 
+h2 {
+    display: inline; 
+}
+
 h4 {
     margin: 20px 0 10px 20px;
+    font-weight: bolder;
+}
+
+h4.slogan {
+    position: absolute;
+    top: 250px;
+    left: 0;
 }
 
 
@@ -64,43 +71,46 @@ img.icon-side {
     border: solid 1px grey;
     border-radius: 5px;
     padding: 4px 5px 4px 5px;
-}
-
-.side-search {
-    margin-left: 30px;
-    margin-top: 10px;
-    position: fixed;
-    top: 200px; 
-    left: 0;
-}
-
-.search-field {
     margin-bottom: 10px;
-    border: solid 1px grey;
-    border-radius: 5px;
-    padding: 4px 5px 4px 5px;
-   
 }
 
 .search-title {
-    margin-top: 
+    margin-top: 40px;
 }
 
+button.return-btn {
+    margin-left: 30px;
+    margin-top: 180px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    
+}
 
+.listing-btn {
+    display: inline;
+    margin: 2px;
+}
 
-
-
-
-/* #front-page{
-    background-image: url('../images/60332-full_abstract-4k-light-vector-background-footage-with-white-and-black.gif');
+#front-page{
+    /* background-image: url('../images/60332-full_abstract-4k-light-vector-background-footage-with-white-and-black.gif'); */
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed; */
-/* } */
+    background-attachment: fixed; 
+} 
+
+#company_url {
+    margin: 5px 0 5px 0;
+}
+
+#description{
+    width: 80%;
+    margin: 30px 5% 10px 5%;
+}
 .card-body {
-    /* border: solid px grey;
-    border-radius: 5px;
-    margin-top: 10px; */
+    border-bottom: solid 1px grey;
+    border-radius: 1px;
+    margin-top: 10px;
 }
 
 .card {
@@ -109,9 +119,17 @@ img.icon-side {
     margin-top: 10px;
 }
 
-#google-maps {
-    margin-top: 10px;
-    position: fixed;
-    top: 0; 
-    right: 0;
+#map {
+
+    height: 400px;
+
 }
+
+#google-maps {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+
+
+
