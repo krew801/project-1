@@ -1,0 +1,75 @@
+<div class="row">
+                            <div class="side-search">
+                
+                
+                                <div class="row">
+                
+                                    <div class="col-sm-4">
+                                        <img class="icon-side" src="./assets/images/my-icons-collection/png/001-web.png" alt="code">
+                                    </div>
+                
+                                </div>
+                
+                                <div class="form-box side-bar">
+                
+                
+                                    <div class="row">
+                
+                                        <div class="col-sm-12">
+                                            <input type="text" id="search-job" class="search-job search-field"
+                                                placeholder="Programming Language...">
+                                        </div>
+                
+                                    </div>
+                
+                
+                
+                                    <div class="row">
+                
+                                        <div class="col-sm-4">
+                                            <img class="icon-side" src="./assets/images/my-icons-collection/png/007-worldwide.png"
+                                                alt="code">
+                                        </div>
+                
+                                    </div>
+                
+                                    <div class="row">
+                
+                
+                
+                                        <div class="col-sm-12">
+                                            <input type="text" id="search-location" class="search-location search-field"
+                                                placeholder="Location...">
+                                        </div>
+                
+                                    </div>
+                
+                
+                
+                                    <div class="row">
+                
+                                        <div class="col-sm-12">
+                                            <button class="search-btn btn btn-outline-primary float-right" type="button">Search</button>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                    </div>
+
+
+
+
+                    ****CSS 
+
+                    .side-search {
+    margin-left: 30px;
+    margin-top: 10px;
+    position: fixed;
+    top: 200px; 
+    left: 0;
+}

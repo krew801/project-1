@@ -1,8 +1,4 @@
 body{
-    /* background-image: url('../images/background-image.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed; */
     margin-top: 10px;
 }
 
@@ -26,6 +22,13 @@ h1{
 
 h4 {
     margin: 20px 0 10px 20px;
+    font-weight: bolder;
+}
+
+h4.slogan {
+    position: absolute;
+    top: 250px;
+    left: 0;
 }
 
 
@@ -64,43 +67,32 @@ img.icon-side {
     border: solid 1px grey;
     border-radius: 5px;
     padding: 4px 5px 4px 5px;
-}
-
-.side-search {
-    margin-left: 30px;
-    margin-top: 10px;
-    position: fixed;
-    top: 200px; 
-    left: 0;
-}
-
-.search-field {
     margin-bottom: 10px;
-    border: solid 1px grey;
-    border-radius: 5px;
-    padding: 4px 5px 4px 5px;
-   
 }
 
 .search-title {
-    margin-top: 
+    margin-top: 40px;
 }
 
+button.return-btn {
+    margin-left: 30px;
+    margin-top: 180px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    
+}
 
-
-
-
-
-/* #front-page{
-    background-image: url('../images/60332-full_abstract-4k-light-vector-background-footage-with-white-and-black.gif');
+#front-page{
+    /* background-image: url('../images/60332-full_abstract-4k-light-vector-background-footage-with-white-and-black.gif'); */
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed; */
-/* } */
+    background-attachment: fixed; 
+} 
 .card-body {
-    /* border: solid px grey;
-    border-radius: 5px;
-    margin-top: 10px; */
+    border-bottom: solid 1px grey;
+    border-radius: 1px;
+    margin-top: 10px;
 }
 
 .card {
@@ -109,9 +101,11 @@ img.icon-side {
     margin-top: 10px;
 }
 
-#google-maps {
+/* #google-maps {
     margin-top: 10px;
     position: fixed;
-    top: 0; 
-    right: 0;
-}
+    top: 10px; 
+    right: 30px;
+} */
+
+
