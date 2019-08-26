@@ -1,5 +1,5 @@
 var language = $('.search-job').text();
-var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + language + "&location=san+francisco"
+var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + language + "&location=san+francisco";
 
 // $('.search-btn').on('click', function(){
   
@@ -13,7 +13,7 @@ var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + 
   //For each job in the response, create a new div dynamically to display the data
     for (let i = 0; i < r.length; i++) {
   // Creates div to store basic company search result information as a bootstrap card
-      var newCard = $('<div>').addClass('card');
+      // var newCard = $('<div>').addClass('card');
       // Created second div to store information within the card body
       var cardBody = $('<div>').addClass('card-body');
       var cardBodyRow = $('<div>').addClass('row body-cont');
@@ -35,17 +35,17 @@ var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + 
       var companySite = $('<div>').attr('id', 'company_url').append($('<a>').text(r[i].company_url).attr('href', r[i].company_url).addClass('card-text'));
       var applyNow = $('<div>').append($('<a>').attr('href', r[i].how_to_apply).text('Apply Now').addClass('btn btn-primary'));//Change color of this button to better reflect styling on results page
       //Add info to the div within card body
-      cardBodyDiv.append(titleDiv, compDiv, companySite, applyNow)
+      cardBodyDiv.append(titleDiv, compDiv, companySite, applyNow);
       // Creating elements to store information in card, with corresponding classes to format in bootstrap
-      var desc = $('<div>').append(r[i].description)
-      desc.addClass('col-6 float-right')
-      //Add information to the card body
-      cardBodyRow.append(compImg, cardBodyDiv, desc)
+      var desc = $('<div>').append(r[i].description);
+      desc.addClass('col-6 float-right');
+      //Add information to the card body;
+      cardBodyRow.append(compImg, cardBodyDiv, desc);
 
       //Add image and card body to the card to complete the card
       cardBody.append(cardBodyRow);
        //Add each job cart to a div (descrpition not added yet)
-      newCard.append(cardBody);
+      $('.card').append(cardBody);
       
       
 
