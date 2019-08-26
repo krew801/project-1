@@ -9,7 +9,7 @@ $('.search-btn').on('click', function(){
   var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + language + "&location=" + location;
 
 
-  $(".search-title").html("<h4>Showing results for " + language + " jobs in " + location);
+  $(".search-title").html("<h4>Showing results for " + language + " jobs in " + location + ".</h4>");
   
 
   $.ajax ({

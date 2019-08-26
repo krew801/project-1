@@ -15,7 +15,18 @@ body{
     min-height: 100%;
   }
 
+h1{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Slabo 27px', serif;
+}
 
+h4 {
+    margin: 20px 0 10px 20px;
+}
 
 
 img {
@@ -41,7 +52,7 @@ img.icon-side {
 
 .searchBar{
     margin:auto;
-    margin-top:25%;
+    margin-top:10%;
     width: 65%;
     padding: 10px;
     opacity: .90;
@@ -54,14 +65,6 @@ img.icon-side {
     border-radius: 5px;
     padding: 4px 5px 4px 5px;
 }
-
-/* .button {
-    height: 100%;
-    width: 100%;
-    border: solid 1px grey;
-    border-radius: 5px;
-    padding: 4px 5px 4px 5px;
-} */
 
 .side-search {
     margin-left: 30px;
@@ -80,20 +83,13 @@ img.icon-side {
 }
 
 .search-title {
-    margin-top: 10px;
+    margin-top: 
 }
 
 
 
 
-h1{
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Libre Caslon Text', serif;
-    font-family: 'Noto Serif', serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Slabo 27px', serif;
-}
+
 
 /* #front-page{
     background-image: url('../images/60332-full_abstract-4k-light-vector-background-footage-with-white-and-black.gif');
