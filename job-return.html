@@ -7,12 +7,14 @@
     <title>Job Search Results</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/job-return-style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <h1>Search Results for <span id="user-search"></span></h1>
-<div class="card">
-    <div class="card-body">
+<div class="row m-1">
+    <div class="card col-7">
+    <!-- <div class="card-body">
 
         <div class="row body-cont">
 
@@ -52,11 +54,12 @@
                     
             
         </div>
-    </div>
-
-
-    <script src="./assets/javascript/app.js"></script>
-    
-    
+    </div> -->
+    </div>  
+    <div class='col-4' id="map"></div>  
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3nTUjOnD55KzcSGNfNRXQXG2JzL6ZNXw&callback=initMap"
+async defer></script>
+<script src="./assets/javascript/app.js"></script>
 </body>
 </html>

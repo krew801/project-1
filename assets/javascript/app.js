@@ -1,8 +1,8 @@
 var language = $('.search-job').text();
 var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + language + "&location=san+francisco";
 
+
 // $('.search-btn').on('click', function(){
-  
   $.ajax ({
     url: queryURL,
     method: "GET"
