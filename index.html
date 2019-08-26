@@ -68,6 +68,8 @@
                                     </div>
                                 </div>
         
+
+                            
                             </div>
         
                             <div class="col-sm-2">
@@ -93,14 +95,10 @@
 
                     </div>
                 
-                        <!-- search box -->
-                
-                        
-                
                     <!-- middle page for displaying job results -->
                     <div class="col-sm-6">
                 
-                        <!-- "showing results for job in location..." -->
+                        <!-- "showing # results for job in  searched location..." -->
                         <div class="row">
                             <div class="search-title"></div>
                         </div>
@@ -109,14 +107,65 @@
                             <div class="card  ml-sm-3 mb-sm-3"></div>
                         </div>
                 
+                        <!-- returned result cards -->
+                        <div class="card">
+                            <div class="card-body">
+                        
+                                <div class="row body-cont">
+                        
+                                    <div class="col-sm-4">
+                                        <div id="company_logo">
+                                            <img src="https://www.arabianbusiness.com/sites/default/files/styles/full_img/public/images/2017/01/17/apple-logo-rainbow.jpg"
+                                                alt="Apple, Inc. Logo">
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-sm-8">
+                                        <div id="job-title">
+                                            <h2>Python Developer</h2>
+                                        </div>
+                                        <div>
+                                            <h3 id="company">Apple, Inc.</h3>
+                                        </div>
+                                        <div>
+                                            <a id="company_url" href="https://www.apple.com/">www.apple.com</a>
+                                        </div>
+
+                                <div class="row body-cont">
+                                    <div id="how_to_apply" class="listing-btn">
+                                        <button id="apply" class="listing-btn btn btn-primary" type="button">apply</button>
+                                    </div>
+                                    <div id="locate_company" class="listing-btn">
+                                        <button id="locate" class="listing-btn btn btn-primary" type="button">locate company</button>
+                                    </div>
+                                    <div id="show_details" class="listing-btn">
+                                        <button id="details" class="listing-btn btn btn-primary" type="button">show job details</button>
+                                    </div>
+                                </div>
+                                       
+                                    </div>
+                                </div>
+                        
+                                    <div id="description" class="row body-cont">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad aliquid non ipsam provident
+                                            dignissimos placeat hic!
+                                            Quis esse culpa, labore hic velit eligendi explicabo officiis dolor possimus laborum voluptatum numquam
+                                            molestiae blanditiis incidunt! Tenetur itaque voluptate qui excepturi hic consequatur aperiam, consequuntur aut
+                                            maxime vitae animi, et magnam exercitationem officia error maiores reiciendis? Voluptate corrupti fugit eum? Hic
+                                            earum autem dolor vel, reiciendis ab dolorum eius neque ipsa, nam expedita, natus minus veniam voluptates
+                                            reprehenderit obcaecati dolore perspiciatis ex fuga! Excepturi sit natus sapiente laboriosam aut facilis
+                                            officiis? Magnam nostrum ex quas veritatis aut rem vitae ea ad pariatur laudantium.</p>
+                                    </div>
+                                </div>
+                            
                     </div>
                 
                     <!-- right of page for map -->
-                    <div id="google-maps" class="col">
+                    <div id="google-maps" class="col-sm-4">
                         <div id="map"></div>
                     </div>
                 
-                </div>
+               
                 
                     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
                     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
