@@ -20,6 +20,10 @@ h1{
     font-family: 'Slabo 27px', serif;
 }
 
+h2 {
+    display: inline; 
+}
+
 h4 {
     margin: 20px 0 10px 20px;
     font-weight: bolder;
