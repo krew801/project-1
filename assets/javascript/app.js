@@ -5,6 +5,26 @@
       
       $('.search-btn').on('click', function() {
 
+        $("#jobs").html("");
+
+        var map;
+
+        function initMap() {
+          //Below is all sample data representing potential JSON returns from freelancers
+          var SF = { lat: 37.7749, lng: -122.4194 };
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: SF,
+            zoom: 10
+          });
+
+          var marker = new google.maps.Marker({ position: SF, map: map });
+
+
+
+
+        }
+        initMap();
+
         $("#results-page").css('display', 'inline');
 
 
@@ -45,7 +65,7 @@
             var applyNow = $('<div class="listing-btn">').append($('<a>').attr('href', r[i].how_to_apply).text('apply now').addClass('btn btn-primary'));//Change color of this button to better reflect styling on results page
             var locateCompany = $('<div class="listing-btn">').append($('<a>').attr('href', r[i].how_to_apply).text('locate company').addClass('btn btn-primary'));//Change color of this button to better reflect styling on results page
             var viewDetails = $('<div class="listing-btn">').text('view job details').addClass('btn btn-primary view-details');//Change color of this button to better reflect styling on results page
-            var desc = $('<div>').attr('id', "description").addClass("row body-cont").append(r[i].description);
+            var desc = $('<div>').attr('id', "description").addClass("row body-cont").append(r[i].description.substring(0, 500));
             
           
             cardBodyDiv.append(titleDiv, compDiv, companySite, applyNow, locateCompany, viewDetails);

@@ -86,49 +86,60 @@
     </div>    
 
     <div id="results-page">
-            <div class="row">
-        
-                    <!-- left page return to top button -->
-                    <div class="col-sm-2">
-                        
-                            <button id="return" class="return-btn btn btn-primary" type="button">return to search &uarr;</button>
+    
+        <div class="row">
+    
+            <!-- left page return to top button -->
+            <div class="col-sm-1">
+    
+                <button id="return" class="return-btn btn btn-primary" type="button">return to search &uarr;</button>
+    
+            </div>
+    
+            <!-- middle page for displaying job results -->
+            <div id="jobs" class="col-sm-6">
+    
+                <!-- "showing # results for job in  searched location..." -->
+                <div class="row">
+                    <div class="search-title"></div>
+                </div>
+    
+                <!-- returned result cards -->
+                <div class="row">
+                    <div class="card  ml-sm-3 mb-sm-3"></div>
+                </div>
 
-                    </div>
                 
-                    <!-- middle page for displaying job results -->
-                    <div class="col-sm-6">
+                <!-- right of page for map -->
                 
-                        <!-- "showing # results for job in  searched location..." -->
-                        <div class="row">
-                            <div class="search-title"></div>
-                        </div>
-                
-                        <div class="row">
-                            <div class="card  ml-sm-3 mb-sm-3"></div>
-                        </div>
-                
-                        <!-- returned result cards -->
-                       
-                
-                    <!-- right of page for map -->
-                    <div id="google-maps" class="col-sm-4">
-                        <div id="map"></div>
-                    </div>
-                
-               
-                
-                    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+            </div>
+
+            <div id="google-maps" class="col-sm-5">
+                <div id="map" ></div>
+            </div>
+            
+    
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
                     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
                     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3nTUjOnD55KzcSGNfNRXQXG2JzL6ZNXw&amp;callback=initMap" async="" defer=""></script>
                     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
                     <script src="assets/javascript/app.js"></script>
                     <script src="./assets/javascript/app.js"></script>
                     
-                    
-                
-    </div>
-
-
 </body>
 
 
