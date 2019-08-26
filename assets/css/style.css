@@ -1,69 +1,91 @@
 body{
-    background-image: url('../images/background-image.jpg');
+    /* background-image: url('../images/background-image.jpg');
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed;
-    margin: 10px;
+    background-attachment: fixed; */
+    margin-top: 10px;
 }
-#map {
-    height: 400px;
-    width: 0 auto;
-  }
+
+
+
   html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     min-height: 100%;
   }
-.search, .about{
-    text-align:left;
-    margin: auto;
-    width: 85%;
-    /* border: 3px solid rgb(2, 255, 234); */
-    padding: 10px;
-    opacity: .8;
-    background-color: aliceblue;
-    border-radius: 5px;
-}
-.about{
-    margin-top:10px;
-    opacity: .8;
-    background-color: aqua;
-    margin-bottom: 2000px;
-}
-.results{
-    color:rgb(4, 73, 151);
-}
+
+
+
 
 img {
     float: left;
-    height: 150px;
+    width: 150px;
 }
 
-#search-return {
-    float: right;
-    margin: 40px 30px 30px 30px;
+img.icon{
+    height: 40px;
+    width: 40px;
+}
+
+img.icon-side {
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.logo-results {
+    position: fixed;
+    top: 0; 
+    left: 0;
 }
 
 .searchBar{
     margin:auto;
     margin-top:25%;
-    width: 85%;
+    width: 65%;
     padding: 10px;
     opacity: .90;
-    background-color: rgb(144, 150, 155);
-    border-radius: 5px;
 }
 
-#results-page-title {
-    text-align: left;
-    margin: 40px 0 30px 30px;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Libre Caslon Text', serif;
-    font-family: 'Noto Serif', serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Slabo 27px', serif;
+.search-field {
+    height: 100%;
+    width: 100%;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
 }
+
+/* .button {
+    height: 100%;
+    width: 100%;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
+} */
+
+.side-search {
+    margin-left: 30px;
+    margin-top: 10px;
+    position: fixed;
+    top: 200px; 
+    left: 0;
+}
+
+.search-field {
+    margin-bottom: 10px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 4px 5px 4px 5px;
+   
+}
+
+.search-title {
+    margin-top: 10px;
+}
+
+
+
+
 h1{
     text-align: center;
     font-family: 'Inconsolata', monospace;
@@ -72,17 +94,28 @@ h1{
     font-family: 'Playfair Display', serif;
     font-family: 'Slabo 27px', serif;
 }
-#front-page{
+
+/* #front-page{
     background-image: url('../images/60332-full_abstract-4k-light-vector-background-footage-with-white-and-black.gif');
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed;
-}
+    background-attachment: fixed; */
+/* } */
 .card-body {
-    border-bottom: solid 2px grey;
+    /* border: solid px grey;
+    border-radius: 5px;
+    margin-top: 10px; */
 }
 
-#map {
-    margin: 0 30
+.card {
+    border: solid px grey;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
+#google-maps {
+    margin-top: 10px;
+    position: fixed;
+    top: 0; 
+    right: 0;
+}

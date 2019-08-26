@@ -1,22 +1,29 @@
-var language = $('.search-job').text();
-var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + language + "&location=san+francisco";
 
-// $('.search-btn').on('click', function(){
+
+$('.search-btn').on('click', function(){
+
+
+
+  var language = $('#search-job').val();
+  var location = $('#search-location').val();
+  var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + language + "&location=" + location;
+
+
+  $(".search-title").html("<h4>Showing results for " + language + " jobs in " + location);
   
+
   $.ajax ({
     url: queryURL,
     method: "GET"
 
   }).then(function(r) {
-    console.log(queryURL);
-    console.log(r)
   //For each job in the response, create a new div dynamically to display the data
     for (let i = 0; i < r.length; i++) {
   // Creates div to store basic company search result information as a bootstrap card
       // Created second div to store information within the card body
       var cardBody = $('<div>').addClass('card-body');
       var cardBodyRow = $('<div>').addClass('row body-cont');
-      var compImg = $('<div>').addClass('col-2 comp-img');
+      var compImg = $('<div>').addClass('col-sm-2 comp-img');
       var company_logo = $('<div>').addClass('float-left');
       var companyLogoImg = $('<img>').attr('src', r[i].company_logo);
       //Append the company logo img to the image div which floats the image to the left within the card
@@ -24,7 +31,7 @@ var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + 
       //Appends the image floated to the left to take up col-2 of the width within the card
       compImg.append(company_logo);
       //This div contains all the body information for the card other than the company logo
-      var cardBodyDiv = $('<div>').addClass('col-3 body');
+      var cardBodyDiv = $('<div>').addClass('col-4');
       //Top header tag for job title, append html into job title div
       var titleDiv = $('<div>').attr('id','job-title');
       titleDiv.append($('<h2>').text(r[i].title));
@@ -53,8 +60,11 @@ var queryURL = "https://github-jobs-proxy.appspot.com/positions?description=" + 
     }
 
   })
-// })
+})
 
+if (searched === true){
+  $()
+}
 var map;
 
 function initMap() {

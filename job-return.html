@@ -118,35 +118,110 @@
         src="https://maps.googleapis.com/maps-api-v3/api/js/38/1/intl/en_gb/controls.js"></script>
 </head>
 <body>
-
-    <div class="row">
-        <div class="col-sm-9"> 
-            <h1 id="results-page-title"><span id="user-search"></span> Jobs in <span id="location-search"></span></h1>
-        </div>
-       <div class="col-sm-3">
-            <a href="./index.html"><button id="search-return">Return to Search</button></a>
-       </div>
-        
-    </div>
-
 <div class="row">
-    <div class="col-sm-8">
-        <div class="card  ml-sm-3 mb-sm-3"></div>
+
+    <!-- left page search bar -->
+    <div class="col-sm-2">
+
+        <div class="row">
+
+            <div class="col-sm-4 logo-results">
+                <img src="./assets/images/project-1-logo.png" style="width: 200px" alt="logo">
+            </div>
+
+        </div>
+
+        <!-- search box -->
+
+        <div class="row">
+            <div class="side-search">
+
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <img class="icon-side" src="./assets/images/my-icons-collection/png/001-web.png" alt="code">
+                    </div>
+
+                </div>
+
+                <div class="form-box side-bar">
+
+
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <input type="text" id="search-job" class="search-job search-field"
+                                placeholder="Program Language...">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <img class="icon-side" src="./assets/images/my-icons-collection/png/007-worldwide.png"
+                                alt="code">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+
+
+                        <div class="col-sm-12">
+                            <input type="text" id="search-location" class="search-location search-field"
+                                placeholder="Location...">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <button class="search-btn btn btn-outline-primary float-right" type="button">Search</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
+    <!-- middle page for displaying job results -->
+    <div class="col-sm-6">
 
+        <!-- "showing results for job in location..." -->
+        <div class="row">
+            <div class="search-title"></div>
+        </div>
 
-    <div class="col-sm-4">
+        <div class="row">
+            <div class="card  ml-sm-3 mb-sm-3"></div>
+        </div>
+
+    </div>
+
+    <!-- right of page for map -->
+    <div id="google-maps" class="col-sm-4">
         <div id="map"></div>
     </div>
+
 </div>
+
     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-database.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3nTUjOnD55KzcSGNfNRXQXG2JzL6ZNXw&amp;callback=initMap" async="" defer=""></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
-
-
     <script src="./assets/javascript/app.js"></script>
     
     
