@@ -75,6 +75,22 @@
             cardBody.append(cardBodyRow);
             
             $('.card').prepend(cardBody);
+            console.log('this is the location' + r[i].location);
+            var mapQuery = 'https://maps.googleapis.com/maps/api/geocode/json?address='+r[i].location+'&key=AIzaSyB3nTUjOnD55KzcSGNfNRXQXG2JzL6ZNXw';
+            $.ajax ({
+              url: mapQuery,
+              method: "GET"
+          
+            }).then(function(resp){
+              var latLong = resp.results[0].geometry.location
+              console.log(latLong)
+              new google.maps.Marker({
+                position: latLong,
+                map: map,
+                icon: image
+              });
+            
+            })
           }
         })
       })
